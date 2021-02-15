@@ -12,7 +12,7 @@ import * as S from './styles'
 import formatPrice from 'utils/format-price';
 
 export type GameCardProps = {
-  slug: string
+  slug?: string
   title: string
   developer: string
   img: string
