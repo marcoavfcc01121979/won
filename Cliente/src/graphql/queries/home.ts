@@ -26,6 +26,7 @@ export const QUERY_HOME = gql`
     freeGames: games(where: { price: 0 }, sort: "release_date:desc", limit: 8) {
       ...GameFragment
     }
+
     sections: home {
       newGames {
         title
@@ -33,21 +34,26 @@ export const QUERY_HOME = gql`
           ...HighlightFragment
         }
       }
+
       popularGames {
         title
         highlight {
           ...HighlightFragment
         }
+
         games(limit: 8) {
           ...GameFragment
         }
       }
+
+
       upcomingGames {
         title
         highlight {
           ...HighlightFragment
         }
       }
+
       freeGames {
         title
         highlight {
