@@ -4,7 +4,7 @@ import bannerMocks from 'components/BannerSlider/mock'
 import gamesMock from 'components/GameCardSlider/mock'
 import hightlightMock from 'components/Highlight/mock'
 import { initializeApollo } from 'utils/apollo'
-import { QueryHome } from 'graphql/generated/QueryHome'
+import { QueryHome, QueryHomeVariables } from 'graphql/generated/QueryHome'
 import { QUERY_HOME } from 'graphql/queries/home'
 import { bannerMapper, gamesMapper, highlightMapper } from 'utils/mappers'
 
@@ -23,8 +23,13 @@ export async function getStaticProps() {
   //retorno dos dados
 
   const apolloClient = initializeApollo()
+  const TODAY = new Date().toISOString().slice(0, 10);
 
-  const { data: { banners, newGames, upcomingGames, freeGames, sections } } = await apolloClient.query<QueryHome>({ query: QUERY_HOME })
+  const { data: { banners, newGames, upcomingGames, freeGames, sections }
+  } = await apolloClient.query<QueryHome, QueryHomeVariables>({
+    query: QUERY_HOME,
+    variables: { date: TODAY }
+  })
   return {
     props: {
       revalidate: 60,
