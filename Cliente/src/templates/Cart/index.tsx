@@ -11,12 +11,14 @@ import Base from 'templates/Base'
 import * as S from './styles'
 
 export type CartProps = {
+  recommendedTitle: string
   recommendedGames: GameCardProps[]
   recommendedHighLight: HighlightProps
 } & CartListProps &
   Pick<PaymentOptionsProps, 'cards'>
 
 const Cart = ({
+  recommendedTitle,
   recommendedGames,
   recommendedHighLight,
   items = [],
@@ -49,7 +51,7 @@ const Cart = ({
       </Container>
 
       <Showcase
-        title="You may like these games"
+        title={recommendedTitle || "You may like these games"}
         games={recommendedGames}
         highlight={recommendedHighLight}
       />
