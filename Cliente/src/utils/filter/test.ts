@@ -1,4 +1,4 @@
-import { ParseQueryStringToWhere, parseQueryStringToFilter } from '.'
+import { parseQueryStringToWhere, parseQueryStringToFilter } from '.'
 
 const filterItems = [
   { name: 'price_lte', type: 'radio' },
@@ -16,7 +16,7 @@ const queryString = {
 
 describe('ParseQueryStringToWhere()', () => {
   it('should parse queryString to where format', () => {
-    const parsedQuey = ParseQueryStringToWhere({ queryString, filterItems })
+    const parsedQuey = parseQueryStringToWhere({ queryString, filterItems })
 
     expect(parsedQuey).toStrictEqual({
       price_lte: 100,

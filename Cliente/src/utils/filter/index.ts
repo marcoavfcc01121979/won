@@ -6,7 +6,7 @@ type ParseArgs = {
   filterItems: Pick<ItemProps, 'type' | 'name'>[]
 }
 
-export const ParseQueryStringToWhere = ({
+export const parseQueryStringToWhere = ({
   queryString,
   filterItems
 }: ParseArgs) => {
