@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<GameInfo /> should render game informations 1`] = `
-.c7 {
+.c8 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
 }
 
-.c6 {
+.c7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -34,19 +34,19 @@ exports[`<GameInfo /> should render game informations 1`] = `
   padding: 0.8rem 4.8rem;
 }
 
-.c6:hover {
+.c7:hover {
   background: linear-gradient(180deg,#e35565 0%,#d958a6 50%);
 }
 
-.c6 svg {
+.c7 svg {
   width: 1.5rem;
 }
 
-.c6 svg + span {
+.c7 svg + span {
   margin-left: 0.8rem;
 }
 
-.c8 {
+.c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -75,30 +75,30 @@ exports[`<GameInfo /> should render game informations 1`] = `
   color: #F231A5;
 }
 
-.c8:hover {
+.c9:hover {
   background: none;
 }
 
-.c8 svg {
+.c9 svg {
   width: 1.5rem;
 }
 
-.c8 svg + span {
+.c9 svg + span {
   margin-left: 0.8rem;
 }
 
-.c8:hover {
+.c9:hover {
   color: #e20e8d;
 }
 
-.c1 {
+.c2 {
   color: #030517;
   position: relative;
   margin-bottom: 3.2rem;
   font-size: 2.0rem;
 }
 
-.c1::after {
+.c2::after {
   position: absolute;
   left: 0;
   bottom: -1rem;
@@ -107,7 +107,7 @@ exports[`<GameInfo /> should render game informations 1`] = `
   border-bottom: 0.5rem solid #F231A5;
 }
 
-.c3 {
+.c4 {
   position: absolute;
   top: 1.6rem;
   display: -webkit-box;
@@ -127,7 +127,7 @@ exports[`<GameInfo /> should render game informations 1`] = `
   background-color: #3CD3C1;
 }
 
-.c3::before {
+.c4::before {
   content: '';
   position: absolute;
   right: 0;
@@ -138,38 +138,38 @@ exports[`<GameInfo /> should render game informations 1`] = `
   border-bottom-width: 1rem;
 }
 
-.c3::before {
+.c4::before {
   top: 3.6rem;
   border-top-width: 1rem;
   border-right-width: 2rem;
 }
 
-.c3::before {
+.c4::before {
   border-left-color: #1f8a7d;
   border-top-color: #1f8a7d;
 }
 
-.c0 {
+.c1 {
   position: relative;
   background: #FAFAFA;
   padding: 2.4rem;
 }
 
-.c0 .c2 {
+.c1 .c3 {
   right: -1rem;
 }
 
-.c0 .c2:before {
+.c1 .c3:before {
   border-right-width: 1rem;
 }
 
-.c4 {
+.c5 {
   font-size: 1.4rem;
   color: #8F8F8F;
   margin-bottom: 2.4rem;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -183,76 +183,76 @@ exports[`<GameInfo /> should render game informations 1`] = `
   align-items: center;
 }
 
-.c5 > button {
+.c6 > button {
   width: 100%;
   margin-bottom: 0.8rem;
 }
 
 @media (min-width:768px) {
-  .c1 {
+  .c2 {
     font-size: 2.8rem;
   }
 }
 
 @media (min-width:768px) {
-  .c0 .c2 {
+  .c1 .c3 {
     right: 2.4rem;
     top: 2.4rem;
   }
 
-  font-size:1.8rem .c0 .c2:before {
+  font-size:1.8rem .c0 .c3:before {
     border: none;
   }
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
     max-width: 77rem;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c6 {
     -webkit-flex-direction: row-reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
   }
 
-  .c5 > button {
+  .c6 > button {
     width: initial;
     margin-bottom: 0;
   }
 }
 
 <div
-  class="c0"
+  class="c0 c1"
 >
   <h2
-    class="c1"
+    class="c2"
     color="black"
   >
     My Game Title
   </h2>
   <div
-    class="c2 c3"
+    class="c3 c4"
     color="secondary"
   >
     $210.00
   </div>
   <p
-    class="c4"
+    class="c5"
   >
     Game Description
   </p>
   <div
-    class="c5"
+    class="c6"
   >
     <button
-      class="c6"
+      class="c7"
     >
       <svg
         aria-hidden="true"
-        class="c7"
+        class="c8"
         fill="currentColor"
         focusable="false"
         viewBox="0 0 24 24"
@@ -271,11 +271,11 @@ exports[`<GameInfo /> should render game informations 1`] = `
       </span>
     </button>
     <button
-      class="c8"
+      class="c9"
     >
       <svg
         aria-hidden="true"
-        class="c7"
+        class="c8"
         fill="currentColor"
         focusable="false"
         viewBox="0 0 24 24"
